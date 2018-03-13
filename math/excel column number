@@ -1,0 +1,12 @@
+int titleToNumber(char* A) {
+    int 	len	= strlen(A);
+	int	i;
+	int	no	= A[0]-'A'+1;
+	
+	for(i = 1; i < len; ++i)
+	{
+		no	= no*26+(A[i]-'A'+1);
+	}
+
+	return no;
+}
